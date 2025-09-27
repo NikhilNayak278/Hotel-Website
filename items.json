@@ -1,0 +1,290 @@
+{
+  "breakfast": [
+    {
+      "id": 1,
+      "name": "Masala Dosa",
+      "cost": 120,
+      "description": "Crispy rice crepe with spiced potato filling and chutneys",
+      "category": "Breakfast"
+    },
+    {
+      "id": 2,
+      "name": "Idli Sambar",
+      "cost": 80,
+      "description": "Steamed rice cakes with lentil soup and coconut chutney",
+      "category": "Breakfast"
+    },
+    {
+      "id": 3,
+      "name": "Poha",
+      "cost": 60,
+      "description": "Flattened rice with onions, curry leaves and peanuts",
+      "category": "Breakfast"
+    },
+    {
+      "id": 4,
+      "name": "Upma",
+      "cost": 70,
+      "description": "Semolina porridge with vegetables and spices",
+      "category": "Breakfast"
+    },
+    {
+      "id": 5,
+      "name": "Aloo Paratha",
+      "cost": 90,
+      "description": "Stuffed potato flatbread with butter and pickle",
+      "category": "Breakfast"
+    },
+    {
+      "id": 6,
+      "name": "Uttapam",
+      "cost": 110,
+      "description": "Thick rice pancake with vegetables and chutneys",
+      "category": "Breakfast"
+    },
+    {
+      "id": 7,
+      "name": "Medu Vada",
+      "cost": 85,
+      "description": "Crispy lentil donuts with sambar and chutney",
+      "category": "Breakfast"
+    },
+    {
+      "id": 8,
+      "name": "Chole Bhature",
+      "cost": 140,
+      "description": "Spicy chickpeas with deep-fried bread and pickle",
+      "category": "Breakfast"
+    },
+    {
+      "id": 9,
+      "name": "Rava Dosa",
+      "cost": 130,
+      "description": "Crispy semolina crepe with potato curry",
+      "category": "Breakfast"
+    },
+    {
+      "id": 10,
+      "name": "Puri Sabzi",
+      "cost": 100,
+      "description": "Deep-fried bread with spiced potato curry",
+      "category": "Breakfast"
+    }
+  ],
+  "main_course": [
+    {
+      "id": 11,
+      "name": "Butter Chicken",
+      "cost": 320,
+      "description": "Tender chicken in rich tomato and butter gravy with naan",
+      "category": "Main Course"
+    },
+    {
+      "id": 12,
+      "name": "Lamb Biryani",
+      "cost": 420,
+      "description": "Fragrant basmati rice with spiced lamb and saffron",
+      "category": "Main Course"
+    },
+    {
+      "id": 13,
+      "name": "Paneer Tikka Masala",
+      "cost": 280,
+      "description": "Grilled cottage cheese in creamy tomato curry",
+      "category": "Main Course"
+    },
+    {
+      "id": 14,
+      "name": "Dal Makhani",
+      "cost": 220,
+      "description": "Slow-cooked black lentils in cream and butter",
+      "category": "Main Course"
+    },
+    {
+      "id": 15,
+      "name": "Fish Curry",
+      "cost": 350,
+      "description": "Fresh fish in coconut and spice curry",
+      "category": "Main Course"
+    },
+    {
+      "id": 16,
+      "name": "Chicken Tikka Masala",
+      "cost": 340,
+      "description": "Grilled chicken in spiced tomato cream sauce",
+      "category": "Main Course"
+    },
+    {
+      "id": 17,
+      "name": "Palak Paneer",
+      "cost": 260,
+      "description": "Cottage cheese cubes in creamy spinach gravy",
+      "category": "Main Course"
+    },
+    {
+      "id": 18,
+      "name": "Rogan Josh",
+      "cost": 380,
+      "description": "Kashmiri lamb curry with aromatic spices",
+      "category": "Main Course"
+    },
+    {
+      "id": 19,
+      "name": "Vegetable Biryani",
+      "cost": 250,
+      "description": "Fragrant rice with mixed vegetables and spices",
+      "category": "Main Course"
+    },
+    {
+      "id": 20,
+      "name": "Malai Kofta",
+      "cost": 290,
+      "description": "Deep-fried vegetable balls in rich cream curry",
+      "category": "Main Course"
+    }
+  ],
+  "snacks": [
+    {
+      "id": 21,
+      "name": "Samosas",
+      "cost": 40,
+      "description": "Crispy pastries filled with spiced potatoes and peas",
+      "category": "Snacks"
+    },
+    {
+      "id": 22,
+      "name": "Pani Puri",
+      "cost": 60,
+      "description": "Crispy hollow puris with flavored water and chutneys",
+      "category": "Snacks"
+    },
+    {
+      "id": 23,
+      "name": "Bhel Puri",
+      "cost": 50,
+      "description": "Puffed rice salad with vegetables and tangy sauces",
+      "category": "Snacks"
+    },
+    {
+      "id": 24,
+      "name": "Aloo Tikki",
+      "cost": 45,
+      "description": "Crispy potato patties with mint and tamarind chutney",
+      "category": "Snacks"
+    },
+    {
+      "id": 25,
+      "name": "Dhokla",
+      "cost": 70,
+      "description": "Steamed chickpea flour cake with mustard seeds",
+      "category": "Snacks"
+    },
+    {
+      "id": 26,
+      "name": "Pakoras",
+      "cost": 80,
+      "description": "Mixed vegetable fritters with mint chutney",
+      "category": "Snacks"
+    },
+    {
+      "id": 27,
+      "name": "Dahi Vada",
+      "cost": 65,
+      "description": "Lentil dumplings in yogurt with sweet and tangy chutneys",
+      "category": "Snacks"
+    },
+    {
+      "id": 28,
+      "name": "Kachori",
+      "cost": 35,
+      "description": "Deep-fried pastry with spiced lentil filling",
+      "category": "Snacks"
+    },
+    {
+      "id": 29,
+      "name": "Chole Kulche",
+      "cost": 90,
+      "description": "Spicy chickpeas with soft leavened bread",
+      "category": "Snacks"
+    },
+    {
+      "id": 30,
+      "name": "Raj Kachori",
+      "cost": 85,
+      "description": "Large crispy shell filled with yogurt, chutneys and sev",
+      "category": "Snacks"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 31,
+      "name": "Gulab Jamun",
+      "cost": 80,
+      "description": "Soft milk dumplings in cardamom sugar syrup",
+      "category": "Desserts"
+    },
+    {
+      "id": 32,
+      "name": "Ras Malai",
+      "cost": 100,
+      "description": "Spongy cheese balls in sweetened milk with pistachios",
+      "category": "Desserts"
+    },
+    {
+      "id": 33,
+      "name": "Kheer",
+      "cost": 70,
+      "description": "Creamy rice pudding with cardamom and dry fruits",
+      "category": "Desserts"
+    },
+    {
+      "id": 34,
+      "name": "Jalebi",
+      "cost": 60,
+      "description": "Crispy spiral sweets soaked in sugar syrup",
+      "category": "Desserts"
+    },
+    {
+      "id": 35,
+      "name": "Kulfi",
+      "cost": 50,
+      "description": "Traditional Indian ice cream with cardamom and nuts",
+      "category": "Desserts"
+    },
+    {
+      "id": 36,
+      "name": "Rabri",
+      "cost": 90,
+      "description": "Thick sweetened milk with almonds and pistachios",
+      "category": "Desserts"
+    },
+    {
+      "id": 37,
+      "name": "Gajar Halwa",
+      "cost": 85,
+      "description": "Carrot pudding with ghee, milk and dry fruits",
+      "category": "Desserts"
+    },
+    {
+      "id": 38,
+      "name": "Rasgulla",
+      "cost": 65,
+      "description": "Spongy cottage cheese balls in sugar syrup",
+      "category": "Desserts"
+    },
+    {
+      "id": 39,
+      "name": "Mysore Pak",
+      "cost": 75,
+      "description": "Rich gram flour sweet with ghee and sugar",
+      "category": "Desserts"
+    },
+    {
+      "id": 40,
+      "name": "Shrikhand",
+      "cost": 95,
+      "description": "Strained yogurt dessert with saffron and cardamom",
+      "category": "Desserts"
+    }
+  ]
+}
