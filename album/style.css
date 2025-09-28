@@ -1,88 +1,126 @@
-body{
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
+/* Album-specific styles to complement the main site design */
 
-body .album-section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.control-button {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid #333;
-    border-radius: 50%;
-    padding: 10px;
-    margin: 0 10px;
-    z-index: 100;
-    position: relative;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease, 
-                transform 0.2s ease, 
-                border-color 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-.control-button:hover {
-    background-color: rgba(255, 255, 255, 1);
-    cursor: pointer;
-    transform: scale(1.1);
-    border-color: #007bff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.control-button > img{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.controls {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    z-index: 101;
+.album-section {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
 }
 
 .album {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-}
-
-#albumImage, .album-image {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    height: 350px;
+    margin-bottom: 30px;
 }
 
 .album-container {
     position: relative;
-    display: block;
-    width: 500px;
-    height: 350px;
-    margin-bottom: 20px;
-    overflow:visible;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    background: #f8f9fa;
+}
+
+#albumImage, .album-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .album-image {
-    /* Multiple transitions for image animations */
     transition: opacity 0.5s ease-in-out,
-                left 0.5s ease-in-out,
+                left 1s ease-in-out,
                 transform 0.5s ease-in-out,
                 filter 0.3s ease;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    z-index: 101;
+}
+
+.control-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.control-button:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.control-button:active {
+    transform: translateY(-1px) scale(1.05);
+}
+
+.control-button img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes icons white */
+}
+
+/* Active navigation link styling */
+nav .list li a.active {
+    background: rgba(255,255,255,0.3);
+    color: white;
+}
+
+/* Responsive design for album */
+@media (max-width: 768px) {
+    .album-container {
+        width: 90%;
+        height: 300px;
+    }
+    
+    .album-section {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .control-button {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .control-button img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .controls {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-container {
+        height: 250px;
+    }
+    
+    .album-section {
+        padding: 15px;
+    }
 }

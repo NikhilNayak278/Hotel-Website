@@ -3,20 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album</title>
+    <title>Photos - NN Residency</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="album-section">
+    <div class="container">
+        <section class="nav-bar">
+            <header class="nowrap">
+                <h1 style="text-align: center;">NN Residency</h1>
+            </header>
+            <nav>
+                <ul class="list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="album.html" class="active">Photos</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <main>
+            <section>
+                <article>
+                    <h2>Photo Gallery</h2>
+                    <p>Take a visual tour of our beautiful hotel and discover the comfort and elegance that awaits you at NN Residency.</p>
+                    
+                    <div class="album-section">
+                        <div class="album">
+                            <div class="album-container"></div>
+                        </div>
+                        <div class="controls">
+                            <button id="prevBtn" class="control-button">
+                                <img src="../icons/previous.png" alt="Previous">
+                            </button>
+                            <button id="nextBtn" class="control-button">
+                                <img src="../icons/next.png" alt="Next">
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
 
-        <div class="album">
-            <div class="album-container"></div>
-        </div>
-        <div class="controls">
-            <button id="prevBtn" class="control-button"><img src="../icons/previous.png" alt="Previous"></button>
-            <button id="nextBtn" class="control-button"><img src="../icons/next.png" alt="Next"></button>
-        </div>
+        <footer class="nowrap">
+            <p>&copy; 2025 NN Residency. All rights reserved.</p>
+        </footer>
     </div>
     <script src="album.js"></script>
-    </body>
+</body>
 </html>
