@@ -3,63 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-        button{
-            margin: 5px;
-            padding: 5px 10px;
-            font-size: 16px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        button:hover{
-            background-color: black;
-            color: white;
-            cursor: pointer;
-            scale: 1.1;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-        }
-        input, select{
-            margin: 5px;
-            padding: 5px;
-            font-size: 16px;
-        }
-        .item-price {
-            margin: 0px 10px;
-            font-weight: bold;
-            border: 1px solid black;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        #new-item{
-            background-color: green;
-            color: white;
-            border: none;
-        }
-        .remove-item, .remove-item:hover {
-            background-color: red;
-            color: white;
-            border: none;
-        }
-    </style>
+    <title>Menu Calculator - NN Residency</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
     <div class="container">
-        <h1>Menu Calculator</h1>
-        <div id="items">
-            
-        </div>
-        <button id="new-item">New Item</button>
-        <button id="calculate">Calculate</button>
-        <h2 id="total">Total: ₹<span id="total-cost"></span>
-        </h2>
+        <section class="nav-bar">
+            <header class="nowrap">
+                <h1 style="text-align: center;">NN Residency</h1>
+            </header>
+            <nav>
+                <ul class="list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../album/album.html">Photos</a></li>
+                    <li><a href="calculator.html" class="active">Menu Calculator</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <main>
+            <section>
+                <article>
+                    <h2>Menu Calculator</h2>
+                    <p>Calculate your dining costs by selecting items from our authentic Indian menu. Choose your favorite dishes and quantities to get an instant total.</p>
+                    
+                    <div class="calculator-section">
+                        <div id="items" class="items-container">
+                            <!-- Items will be added dynamically -->
+                        </div>
+                        
+                        <div class="calculator-controls">
+                            <button id="new-item" class="btn-primary">Add New Item</button>
+                            <button id="calculate" class="btn-secondary">Calculate Total</button>
+                        </div>
+                        
+                        <div id="total-display" class="total-display">
+                            <h3 id="total">Total: ₹<span id="total-cost">0</span></h3>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="nowrap">
+            <p>&copy; 2025 NN Residency. All rights reserved.</p>
+        </footer>
     </div>
-    <script src="./calculator.js"></script>
+    <script src="calculator.js"></script>
 </body>
 </html>

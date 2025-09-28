@@ -145,11 +145,18 @@ function calculateTotal() {
     
     console.log('Total cost:', total);
     
-    // Display total (you can update this based on your HTML structure)
-    const totalDisplay = document.getElementById('total') || document.querySelector('.total');
-    if (totalDisplay) {
-        totalDisplay.textContent = `Total: ₹${1.18 * total} (with GST: ₹${(total * 0.18).toFixed(2)})`;
-    } else {
-        alert(`Total Cost: ₹${total}`);
+    // Update the total display
+    const totalCostElement = document.getElementById('total-cost');
+    if (totalCostElement) {
+        totalCostElement.textContent = total.toFixed(2);
+    }
+    
+    // Show breakdown if there are items
+    if (total > 0) {
+        const gst = total * 0.18;
+        const totalWithGst = total + gst;
+        console.log(`Subtotal: ₹${total.toFixed(2)}`);
+        console.log(`GST (18%): ₹${gst.toFixed(2)}`);
+        console.log(`Total with GST: ₹${totalWithGst.toFixed(2)}`);
     }
 }
