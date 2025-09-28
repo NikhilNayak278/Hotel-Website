@@ -1,0 +1,88 @@
+body{
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+body .album-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #333;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    z-index: 100;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, 
+                transform 0.2s ease, 
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.control-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    transform: scale(1.1);
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.control-button > img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.controls {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    z-index: 101;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#albumImage, .album-image {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    height: 350px;
+}
+
+.album-container {
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 20px;
+    overflow:visible;
+}
+
+.album-image {
+    /* Multiple transitions for image animations */
+    transition: opacity 0.5s ease-in-out,
+                left 0.5s ease-in-out,
+                transform 0.5s ease-in-out,
+                filter 0.3s ease;
+}
