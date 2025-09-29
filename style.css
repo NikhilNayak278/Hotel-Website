@@ -276,4 +276,151 @@ footer p {
     height: 200px;
   }
 }
+ 
 
+
+
+legend{
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: bold;
+}
+
+legend::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+
+form {
+  border: none;
+  background: transparent;
+}
+
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+
+form label {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+   margin-bottom: 0;
+   margin-top: 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  margin-top: 0;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e6edf6;
+  background: #fbfdff;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.05s;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(102,126,234,0.12);
+  border-color: #667eea;
+  transform: translateY(-1px);
+}
+
+/* Button container (matches the markup where buttons are last div inside fieldset) */
+form fieldset > div:last-of-type {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* Primary submit button */
+form button[type="submit"] {
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 8px 20px rgba(102,126,234,0.18);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s;
+}
+
+/* Secondary reset button */
+form button[type="reset"] {
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(102,126,234,0.18);
+  font-weight: 700;
+  color: #667eea;
+  background: transparent;
+  box-shadow: none;
+  transition: transform 0.12s ease, opacity 0.12s;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+  transform: translateY(-3px);
+}
+
+form button[type="submit"]:active,
+form button[type="reset"]:active {
+  transform: translateY(-1px);
+}
+
+form button:focus {
+  outline: 3px solid rgba(102,126,234,0.15);
+  outline-offset: 3px;
+}
+
+/* small responsive tweak */
+@media (max-width: 480px) {
+  form fieldset > div:last-of-type {
+    flex-direction: column;
+  }
+
+  form button[type="submit"],
+  form button[type="reset"] {
+    width: 100%;
+  }
+}
+
+.footer{
+  margin-top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+section #article{
+ border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
