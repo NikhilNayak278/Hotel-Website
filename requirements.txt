@@ -1,0 +1,5 @@
+pydantic
+sentence-transformers
+chromadb
+fastapi
+subprocess

@@ -542,4 +542,135 @@ section #article{
   }
 }
 
+/* Q&A Section Styles */
+.qna-section {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin: 40px 0;
+  box-shadow: 0 8px 25px rgba(102,126,234,0.08);
+}
+
+.qna-section h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.qna-section > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.qna-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.qna-form .input-group {
+  margin-bottom: 20px;
+}
+
+.qna-form label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.qna-form input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e6edf6;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: all 0.2s ease;
+}
+
+.qna-form input[type="text"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 6px 20px rgba(102,126,234,0.15);
+  transform: translateY(-2px);
+}
+
+.qna-form .button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.qna-form button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.qna-form button[type="submit"] {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 8px 20px rgba(102,126,234,0.2);
+}
+
+.qna-form button[type="reset"] {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.qna-form button:hover {
+  transform: translateY(-2px);
+}
+
+.qna-form button[type="submit"]:hover {
+  box-shadow: 0 12px 25px rgba(102,126,234,0.3);
+}
+
+.qna-form button[type="reset"]:hover {
+  background: #667eea;
+  color: white;
+}
+
+.answer-section {
+  max-width: 600px;
+  margin: 30px auto 0;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.answer-section h3 {
+  color: #2c3e50;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.answer-content {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ...existing code... */

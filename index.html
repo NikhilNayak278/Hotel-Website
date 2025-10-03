@@ -95,6 +95,39 @@
       </div>
     </section>
 
+    <section class="qna-section article" aria-labelledby="qna-heading">
+      <h2 id="qna-heading">Ask Us Anything</h2>
+      <p>Have questions about our hotel, menu, or services? Ask away and get instant answers!</p>
+      
+      <form class="qna-form" action="#" method="post" novalidate>
+        <fieldset>
+          <legend class="sr-only">Question and Answer Form</legend>
+          
+          <div class="input-group">
+            <label for="question-input">Your Question:</label>
+            <input 
+              type="text" 
+              id="question-input" 
+              name="question" 
+              placeholder="e.g., What time is breakfast served? What are your room rates?"
+              required 
+              aria-required="true"
+            />
+          </div>
+          
+          <div class="button-group">
+            <button type="submit" id="ask-btn">Ask Question</button>
+            <button type="reset">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+      
+      <div class="answer-section" id="answer-section" style="display: none;">
+        <h3>Answer:</h3>
+        <div class="answer-content" id="answer-content"></div>
+      </div>
+    </section>
+
     <section class="article">
       <h2>Visit Us</h2>
       <p>Located at R V Vidyanikethan Post, Mysuru Road, Bengaluru — close to major bus routes. For reservations call +91 123456788 or use our contact page.</p>
@@ -104,5 +137,51 @@
   <footer class="nowrap footer">
     <p>&copy; 2025 NN Residency. All rights reserved.</p>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.querySelector(".qna-form");
+      const questionInput = document.getElementById("question-input");
+      const answerSection = document.getElementById("answer-section");
+      const answerContent = document.getElementById("answer-content");
+
+      form.addEventListener("submit", async function(event) {
+        event.preventDefault();
+        const question = questionInput.value.trim();
+        if (!question) {
+          alert("Please enter a question.");
+          return;
+        }
+
+        // Show loading state
+        answerContent.textContent = "Loading...";
+        answerSection.style.display = "block";
+
+        try {
+          const response = await fetch("http://localhost:8000/rag", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ query: question })
+          });
+
+          if (!response.ok) {
+            throw new Error(`Error: ${response.statusText}`);
+          }
+
+          const data = await response.json();
+          answerContent.textContent = data.answer || "No answer found.";
+        } catch (error) {
+          console.error("Error fetching answer:", error);
+          answerContent.textContent = "Sorry, there was an error processing your request.";
+        }
+      });
+
+      form.addEventListener("reset", function() {
+        answerSection.style.display = "none";
+        answerContent.textContent = "";
+      });
+    });
+  </script>
 </body>
 </html>
